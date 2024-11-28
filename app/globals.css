@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .mainWrapper {
+        @apply min-h-screen w-full flex bg-[#161e27]
+    }
+    .postIcon {
+        @apply text-[#788ea5] text-sm
+    }
+    .postDiv {
+        @apply flex items-center p-[5px] gap-1 cursor-pointer hover:bg-[#1e2936] rounded-full max-w-[130px]
+    }
+    .userInfo {
+        @apply text-[#aebbc9] text-[15px]
+    }
+    .link {
+        @apply text-[#208bfe] border-b border-transparent hover:border-[#208bfe] transition-all
+    }
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
