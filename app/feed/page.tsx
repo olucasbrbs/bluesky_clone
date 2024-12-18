@@ -1,7 +1,7 @@
 "use client";
 
-import Button from "@/components/shared/Button";
 import PostCard from "@/components/PostCard";
+import LinkButton from "@/components/shared/Button";
 import Search from "@/components/shared/Search";
 import { feedLinks, menu, posts } from "@/constants";
 import Image from "next/image";
@@ -34,13 +34,13 @@ const Feed = () => {
               conversation
             </p>
             <div className="flex gap-2">
-              <Button
+              <LinkButton
                 title="Sign up"
                 color="blue"
                 href="/sign-up"
                 customClass="w-[70px] h-[33px] rounded-md text-sm max-xl:rounded-full"
               />
-              <Button
+              <LinkButton
                 title="Sign in"
                 color="gray"
                 href="/sign-in"
@@ -67,7 +67,7 @@ const Feed = () => {
             ))}
           </div>
           <div className="pb-10 mx-auto">
-            <Button title="Post" color="blue" href="/tweet" fullWidth />
+            <LinkButton title="Post" color="blue" href="/tweet" fullWidth />
           </div>
         </section>
       )}

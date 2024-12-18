@@ -1,4 +1,5 @@
-import Button from "@/components/shared/Button";
+
+import LinkButton from "@/components/shared/Button";
 import Input from "@/components/shared/Input";
 import React from "react";
 import { MdAlternateEmail, MdLockOutline } from "react-icons/md";
@@ -40,13 +41,13 @@ const SignIn = () => {
             </div>
           </div>
           <div className="flex pt-3 items-center justify-between">
-            <Button
+            <LinkButton
               title="Back"
               color="gray"
               href="/"
               customClass="px-5 py-3"
             />
-            <Button
+            <LinkButton
               title="Next"
               color="blue"
               href="/feed"

@@ -1,4 +1,5 @@
-import Button from "@/components/shared/Button";
+
+import LinkButton from "@/components/shared/Button";
 import Input from "@/components/shared/Input";
 import Link from "next/link";
 import { MdOutlineEmail, MdLockOutline, MdOutlineDateRange  } from "react-icons/md";
@@ -47,8 +48,8 @@ const SignUp = () => {
             <Link href="#" className="link">Privacy Policy</Link>.
           </p>
           <div className="flex pt-7 pb-4 items-center justify-between">
-            <Button title="Back" color="gray" href="/" customClass="px-5 py-3"/>
-            <Button title="Next" color="blue" href="/feed" customClass="px-5 py-3"/>
+            <LinkButton title="Back" color="gray" href="/" customClass="px-5 py-3"/>
+            <LinkButton title="Next" color="blue" href="/feed" customClass="px-5 py-3"/>
           </div>
         </div>
       </section>

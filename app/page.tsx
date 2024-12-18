@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { homeFooterLinks } from "@/constants";
 import Link from "next/link";
-import Button from "@/components/shared/Button";
+import LinkButton from "@/components/shared/Button";
 
 const Home = () => {
   return (
@@ -26,8 +26,8 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-3 px-5 pb-6">
-          <Button title="Create account" color="blue" href="/sign-up" fullWidth/>
-          <Button title="Sign in" color="gray" href="/sign-in" fullWidth/>
+          <LinkButton title="Create account" color="blue" href="/sign-up" fullWidth/>
+          <LinkButton title="Sign in" color="gray" href="/sign-in" fullWidth/>
         </div>
       </section>
       <footer className="absolute bottom-0 p-5 border-t border-t-coalBlue flex flex-1 gap-60 items-center flex-wrap justify-between max-sm:gap-20 max-[400px]:gap-10">

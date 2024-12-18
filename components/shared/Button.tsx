@@ -9,7 +9,7 @@ interface ButtonProps {
   customClass?: string
 }
 
-const Button = ({ title, color, href, fullWidth, customClass}: ButtonProps) => {
+const LinkButton = ({ title, color, href, fullWidth, customClass}: ButtonProps) => {
   return (
     <button
       className={`${customClass} font-bold rounded-lg transition flex items-center justify-center text-[15px] h-[43px] 
@@ -20,4 +20,4 @@ const Button = ({ title, color, href, fullWidth, customClass}: ButtonProps) => {
   );
 };
 
-export default Button;
+export default LinkButton;
