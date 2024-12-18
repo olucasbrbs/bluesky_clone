@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { homeFooterLinks } from "@/constants";
 import Link from "next/link";
-import LinkButton from "@/components/shared/Button";
+import LinkButton from "@/components/shared/LinkButton";
 
 const Home = () => {
   return (

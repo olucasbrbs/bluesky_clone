@@ -1,5 +1,5 @@
 
-import LinkButton from "@/components/shared/Button";
+import LinkButton from "@/components/shared/LinkButton";
 import Input from "@/components/shared/Input";
 import React from "react";
 import { MdAlternateEmail, MdLockOutline } from "react-icons/md";

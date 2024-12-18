@@ -1,7 +1,7 @@
 "use client";
 
 import PostCard from "@/components/PostCard";
-import LinkButton from "@/components/shared/Button";
+import LinkButton from "@/components/shared/LinkButton";
 import Search from "@/components/shared/Search";
 import { feedLinks, menu, posts } from "@/constants";
 import Image from "next/image";

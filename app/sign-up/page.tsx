@@ -1,5 +1,5 @@
 
-import LinkButton from "@/components/shared/Button";
+import LinkButton from "@/components/shared/LinkButton";
 import Input from "@/components/shared/Input";
 import Link from "next/link";
 import { MdOutlineEmail, MdLockOutline, MdOutlineDateRange  } from "react-icons/md";
