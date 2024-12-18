@@ -4,19 +4,19 @@
 
 @layer utilities {
     .mainWrapper {
-        @apply min-h-screen w-full flex bg-[#161e27]
+        @apply min-h-screen w-full flex bg-darkGrayishBlue
     }
     .postIcon {
-        @apply text-[#788ea5] text-sm
+        @apply text-mediumGray text-sm
     }
     .postDiv {
-        @apply flex items-center p-[5px] gap-1 cursor-pointer hover:bg-[#1e2936] rounded-full max-w-[130px]
+        @apply flex items-center p-[5px] gap-1 cursor-pointer hover:bg-mediumGrayishBlue rounded-full max-w-[130px]
     }
     .userInfo {
-        @apply text-[#aebbc9] text-[15px]
+        @apply text-lightGray text-[15px]
     }
     .link {
-        @apply text-[#208bfe] border-b border-transparent hover:border-[#208bfe] transition-all
+        @apply text-lightBlue border-b border-transparent hover:border-lightBlue transition-all
     }
 }
 

@@ -25,7 +25,7 @@ const PostCard = ({
   likes,
 }: PostCardProps) => {
   return (
-    <div className="px-[15px] py-2 flex gap-[10px] border-b border-[#2e4052]">
+    <div className="px-[15px] py-2 flex gap-[10px] border-b border-deepBlue">
       <Image
         src={icon}
         alt="Icon"
@@ -36,7 +36,7 @@ const PostCard = ({
 
       <div className="flex flex-col">
         <div className="flex gap-1">
-          <p className="font-bold text-[#f1f3f5] text-[15px] max-sm:hidden">
+          <p className="font-bold text-white text-[15px] max-sm:hidden">
             {nickname}
           </p>
           <p className="userInfo truncate">
@@ -46,7 +46,7 @@ const PostCard = ({
           <p className="userInfo">{time}</p>
         </div>
 
-        <p className="text-[#f1f3f5] text-[15px]">{content}</p>
+        <p className="text-white text-[15px]">{content}</p>
         <div className="flex gap-10 max-sm:gap-4 w-2/3 justify-between">
           <div className="!pl-0 postDiv ">
             <FaRegCommentAlt className="postIcon" />

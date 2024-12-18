@@ -6,7 +6,7 @@ import Button from "@/components/shared/Button";
 
 const Home = () => {
   return (
-    <main className="min-h-screen w-full flex flex-col items-center bg-[#161e27] justify-center">
+    <main className="min-h-screen w-full flex flex-col items-center bg-darkGrayishBlue justify-center">
       <Link href='/feed' className="absolute flex items-center justify-center bg-white rounded-full top-5 right-10 p-3 w-8 h-8 font-bold max-sm:right-5">
       X
       </Link>
@@ -22,7 +22,7 @@ const Home = () => {
             <p className="text-white text-5xl pt-10 pb-2 font-bold tracking-tighter">
               Bluesky
             </p>
-            <p className="text-[#aebbc9] font-bold">What&apos;s up?</p>
+            <p className="text-lightGray font-bold">What&apos;s up?</p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-3 px-5 pb-6">
@@ -30,13 +30,13 @@ const Home = () => {
           <Button title="Sign in" color="gray" href="/sign-in" fullWidth/>
         </div>
       </section>
-      <footer className="absolute bottom-0 p-5 border-t border-t-[#364b61] flex flex-1 gap-60 items-center flex-wrap justify-between max-sm:gap-20 max-[400px]:gap-10">
+      <footer className="absolute bottom-0 p-5 border-t border-t-coalBlue flex flex-1 gap-60 items-center flex-wrap justify-between max-sm:gap-20 max-[400px]:gap-10">
         <div className="flex gap-5">
           {homeFooterLinks.map((item) => (
             <Link
               href={item.href}
               key={item.id}
-              className="text-[#208bfe] border-b border-b-transparent transition hover:border-b-[#208bfe] text-sm"
+              className="text-lightBlue border-b border-b-transparent transition hover:border-b-lightBlue text-sm"
             >
               {item.title}
             </Link>

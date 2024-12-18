@@ -16,8 +16,8 @@ const Feed = () => {
   return (
     <main className="mainWrapper justify-center absolute">
       {!isUserLogged ? (
-        <section className="flex xl:flex-[0.55] xl:pt-8 flex-col xl:items-end xl:pr-14 max-xl:fixed max-xl:bottom-0 max-xl:w-full bg-[#161e27]">
-          <div className="flex xl:flex-col gap-3 max-xl:justify-between max-xl:p-4 max-xl:border-t border-[#6c95c056]">
+        <section className="flex xl:flex-[0.55] xl:pt-8 flex-col xl:items-end xl:pr-14 max-xl:fixed max-xl:bottom-0 max-xl:w-full bg-darkGrayishBlue">
+          <div className="flex xl:flex-col gap-3 max-xl:justify-between max-xl:p-4 max-xl:border-t border-lightGrayishBlue/30">
             <Link href="/sign-up" className="flex items-center gap-3">
               <Image
                 src="/assets/bluesky_logo.png"
@@ -25,11 +25,11 @@ const Feed = () => {
                 height={40}
                 width={36}
               />
-              <p className="xl:hidden text-[#f1f3f5] text-xl font-bold">
+              <p className="xl:hidden text-white text-xl font-bold">
                 Bluesky
               </p>
             </Link>
-            <p className="text-[#f1f3f5] text-2xl font-extrabold leading-6 max-xl:hidden">
+            <p className="text-white text-2xl font-extrabold leading-6 max-xl:hidden">
               Join the <br />
               conversation
             </p>
@@ -56,8 +56,8 @@ const Feed = () => {
             {menu.map((item) => (
               <div
                 key={item.id}
-                className={`flex items-center px-8 py-3 gap-4 hover:bg-[#1e2936] rounded-md text-[#6d8197] hover:text-[#f1f3f5] cursor-pointer ${
-                  activeMenu === item.title && "text-[#f1f3f5] bg-[#1e2936]"
+                className={`flex items-center px-8 py-3 gap-4 hover:bg-mediumGrayishBlue rounded-md text-darkGray hover:text-white cursor-pointer ${
+                  activeMenu === item.title && "text-white bg-mediumGrayishBlue"
                 }`}
                 onClick={() => setActiveMenu(item.title)}
               >
@@ -71,22 +71,22 @@ const Feed = () => {
           </div>
         </section>
       )}
-      <section className="flex-1 max-md:flex-1 max-xl:flex-[0.6] flex flex-col border-x border-[#2e4052]">
-        <div className="flex border-b border-[#2e4052]">
-          <div className={`transition px-[14px] pt-[14px] hover:bg-[#1e2936]`}>
+      <section className="flex-1 max-md:flex-1 max-xl:flex-[0.6] flex flex-col border-x border-deepBlue">
+        <div className="flex border-b border-deepBlue">
+          <div className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}>
             <p
-              className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-[#aebbc9] ${
-                active === "discover" && "text-[#f1f3f5] !border-[#208bfe]"
+              className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-lightGray ${
+                active === "discover" && "text-white !border-lightBlue"
               }`}
               onClick={() => setActive("discover")}
             >
               Discover
             </p>
           </div>
-          <div className={`transition px-[14px] pt-[14px] hover:bg-[#1e2936]`}>
+          <div className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}>
             <p
-              className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-[#aebbc9] ${
-                active === "feeds" && "text-[#f1f3f5] !border-[#208bfe]"
+              className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-lightGray ${
+                active === "feeds" && "text-white !border-lightBlue"
               }`}
               onClick={() => setActive("feeds")}
             >
@@ -120,7 +120,7 @@ const Feed = () => {
                 href={item.href}
                 className="flex gap-1 items-center"
               >
-                <p className="text-[#208bfe] border-b border-b-transparent transition hover:border-b-[#208bfe] text-sm">
+                <p className="text-lightBlue border-b border-b-transparent transition hover:border-b-lightBlue text-sm">
                   {item.title}
                 </p>{" "}
                 {item.id !== "3" && (
