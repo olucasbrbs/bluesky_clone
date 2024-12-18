@@ -46,7 +46,7 @@ const PostCard = ({
           <p className="userInfo">{time}</p>
         </div>
 
-        <p className="text-white text-[15px]">{content}</p>
+        <p className="text-white text-[15px] mb-1">{content}</p>
         <div className="flex gap-10 max-sm:gap-4 w-2/3 justify-between">
           <div className="!pl-0 postDiv ">
             <FaRegCommentAlt className="postIcon" />
