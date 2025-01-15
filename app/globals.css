@@ -22,7 +22,7 @@
         @apply text-white bg-lightBlue hover:bg-lightBlue/70 font-bold rounded-lg transition flex items-center justify-center text-[15px] h-[43px] px-5 py-3
     }
     .inputDiv {
-        @apply border-2 border-transparent flex gap-2 items-center text-darkGray bg-mediumGrayishBlue rounded-lg px-3 py-1 hover:border-deepBlue hover:text-white
+        @apply border-2 border-transparent flex gap-2 items-center text-darkGray bg-mediumGrayishBlue rounded-lg px-3 py-2 hover:border-deepBlue hover:text-white
     }
     .formInput {
         @apply my-[2px] bg-transparent border-none w-full outline-none text-darkGray placeholder:text-darkGray focus:text-white

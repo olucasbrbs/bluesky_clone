@@ -30,7 +30,7 @@ const SignIn = () => {
             </p>
             <p>input</p>
           </div>
-          <form onSubmit={handleSubmit} className="flex flex-col w-2/3 max-md:w-full">
+          <form onSubmit={handleSubmit} className="flex flex-col w-2/3 max-md:w-full gap-2">
             <div>
               <p className="text-lightGray mb-2 text-sm font-semibold">
                 Account
