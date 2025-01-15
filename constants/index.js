@@ -76,6 +76,72 @@ export const posts = [
         reposts: "1.2k",
         likes: "10.5k"
     },
+    {
+        id: "4",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
+    {
+        id: "5",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
+    {
+        id: "6",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
+    {
+        id: "7",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
+    {
+        id: "8",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
+    {
+        id: "9",
+        nickname: "Katie Mack",
+        user: "astrokatie",
+        time: "12h",
+        icon: "https://cdn.bsky.app/img/avatar_thumbnail/plain/did:plc:62gdkmpwa7xme36getyqnem3/bafkreia7wdfi6wwp5dfe3tn2urjnkkujdds6x2bjebf2bbjnxx2h36cnnu@jpeg",
+        content: "Anyway here’s a cheerful piece about how the Sun will eventually destroy all life on Earth (but not by exploding, so, you know, there’s that)",
+        comments: "625",
+        reposts: "1.2k",
+        likes: "10.5k"
+    },
 ]
 
 export const menu = [
@@ -121,4 +187,20 @@ export const menu = [
         icon: <FaRegUser />,
         title: "profile"
     },
+]
+
+export const languageOptions = [
+    {
+        id: "english",
+        value: "English"
+    },
+    {
+        id: "portuguese",
+        value: "Portuguese"
+    },
+    {
+        id: "español",
+        value: "Español"
+    },
+
 ]

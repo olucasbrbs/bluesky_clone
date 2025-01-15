@@ -1,7 +1,6 @@
 "use client";
 
 import LinkButton from "@/components/shared/LinkButton";
-import React from "react";
 import { MdAlternateEmail, MdLockOutline } from "react-icons/md";
 
 const SignIn = () => {

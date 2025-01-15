@@ -3,21 +3,21 @@
 import PostCard from "@/components/PostCard";
 import LinkButton from "@/components/shared/LinkButton";
 import Search from "@/components/shared/Search";
-import { feedLinks, menu, posts } from "@/constants";
+import { feedLinks, languageOptions, menu, posts } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 const Feed = () => {
-  const isUserLogged = true;
+  const isUserLogged = false;
   const [active, setActive] = useState<string>("discover");
   const [activeMenu, setActiveMenu] = useState<string>("home");
 
   return (
     <main className="mainWrapper justify-center absolute">
       {!isUserLogged ? (
-        <section className="flex xl:flex-[0.55] xl:pt-8 flex-col xl:items-end xl:pr-14 max-xl:fixed max-xl:bottom-0 max-xl:w-full bg-darkGrayishBlue">
-          <div className="flex xl:flex-col gap-3 max-xl:justify-between max-xl:p-4 max-xl:border-t border-lightGrayishBlue/30">
+        <section className="flex xl:flex-[0.55] xl:pt-8 flex-col xl:items-end xl:pr-14 max-xl:fixed max-xl:bottom-0 max-xl:w-full bg-darkGrayishBlue relative">
+          <div className="flex xl:flex-col gap-3 max-xl:justify-between max-xl:p-4 max-xl:border-t border-lightGrayishBlue/30 top-8 sticky">
             <Link href="/sign-up" className="flex items-center gap-3">
               <Image
                 src="/assets/bluesky_logo.png"
@@ -25,9 +25,7 @@ const Feed = () => {
                 height={40}
                 width={36}
               />
-              <p className="xl:hidden text-white text-xl font-bold">
-                Bluesky
-              </p>
+              <p className="xl:hidden text-white text-xl font-bold">Bluesky</p>
             </Link>
             <p className="text-white text-2xl font-extrabold leading-6 max-xl:hidden">
               Join the <br />
@@ -47,12 +45,20 @@ const Feed = () => {
                 customClass="w-[70px] h-[33px] rounded-md text-sm max-xl:rounded-full"
               />
             </div>
-            <div className="max-xl:hidden">dropdown</div>
+            <div className="max-xl:hidden">
+              <select className="mainSelect">
+                {languageOptions.map((item, index) => (
+                  <option key={index} value={item.id}>
+                    {item.value}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
         </section>
       ) : (
-        <section className="flex-[0.55] flex flex-col justify-between px-14 max-xl:hidden">
-          <div className="flex flex-col xl:pt-8 gap-2">
+        <section className="flex-[0.55] flex flex-col justify-between px-14 max-xl:hidden relative">
+          <div className="flex flex-col xl:pt-8 gap-2 top-0 sticky">
             {menu.map((item) => (
               <div
                 key={item.id}
@@ -61,19 +67,23 @@ const Feed = () => {
                 }`}
                 onClick={() => setActiveMenu(item.title)}
               >
-                <p className="">{activeMenu === item.title ? item.activeIcon : item.icon }</p>
+                <p className="">
+                  {activeMenu === item.title ? item.activeIcon : item.icon}
+                </p>
                 <p className="capitalize font-semibold">{item.title}</p>
               </div>
             ))}
           </div>
-          <div className="pb-10 mx-auto">
+          <div className="pb-10 mx-auto bottom-0 sticky">
             <LinkButton title="Post" color="blue" href="/tweet" fullWidth />
           </div>
         </section>
       )}
       <section className="flex-1 max-md:flex-1 max-xl:flex-[0.6] flex flex-col border-x border-deepBlue">
         <div className="flex border-b border-deepBlue">
-          <div className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}>
+          <div
+            className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}
+          >
             <p
               className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-lightGray ${
                 active === "discover" && "text-white !border-lightBlue"
@@ -83,7 +93,9 @@ const Feed = () => {
               Discover
             </p>
           </div>
-          <div className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}>
+          <div
+            className={`transition px-[14px] pt-[14px] hover:bg-mediumGrayishBlue`}
+          >
             <p
               className={`border-b-[3px] border-transparent text-[14px] cursor-pointer font-bold pb-2 text-lightGray ${
                 active === "feeds" && "text-white !border-lightBlue"
@@ -110,8 +122,8 @@ const Feed = () => {
           ))}
         </div>
       </section>
-      <section className="flex-[0.7] flex flex-col pt-8 max-xl:hidden">
-        <div className="px-[18px] mx-5">
+      <section className="flex-[0.7] flex flex-col pt-8 max-xl:hidden relative">
+        <div className="px-[18px] mx-5 top-8 sticky">
           <Search />
           <div className="flex gap-1 px-2 py-3">
             {feedLinks.map((item) => (

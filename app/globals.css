@@ -27,6 +27,9 @@
     .formInput {
         @apply my-[2px] bg-transparent border-none w-full outline-none text-darkGray placeholder:text-darkGray focus:text-white
     }
+    .mainSelect {
+        @apply outline-none bg-darkGrayishBlue text-white p-1 text-[14px]
+    }
 }
 
 input[type="date"]::-webkit-inner-spin-button,

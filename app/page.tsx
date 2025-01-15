@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { homeFooterLinks } from "@/constants";
+import { homeFooterLinks, languageOptions } from "@/constants";
 import Link from "next/link";
 import LinkButton from "@/components/shared/LinkButton";
 
@@ -30,7 +30,7 @@ const Home = () => {
           <LinkButton title="Sign in" color="gray" href="/sign-in" fullWidth/>
         </div>
       </section>
-      <footer className="absolute bottom-0 p-5 border-t border-t-coalBlue flex flex-1 gap-60 items-center flex-wrap justify-between max-sm:gap-20 max-[400px]:gap-10">
+      <footer className="absolute bottom-0 p-5 border-t border-t-coalBlue flex flex-1 gap-60 items-center flex-wrap justify-between max-sm:gap-20 max-[400px]:gap-4">
         <div className="flex gap-5">
           {homeFooterLinks.map((item) => (
             <Link
@@ -43,7 +43,11 @@ const Home = () => {
           ))}
         </div>
         <div>
-          Dropdown
+          <select className="mainSelect">
+            {languageOptions.map((item, index) => (
+              <option key={index} value={item.id}>{item.value}</option>
+            ))}
+          </select>
         </div>
       </footer>
     </main>
